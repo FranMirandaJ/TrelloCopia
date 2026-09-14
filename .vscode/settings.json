@@ -1,12 +1,12 @@
 {
-  // --- ESLint (fuente única de formato del proyecto) ---
+  // --- ESLint (solo linting; el formato lo hace Prettier) ---
   "eslint.useFlatConfig": true,
   "eslint.run": "onType",
-  "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // --- TypeScript: usar la versión del proyecto ---
   "js/ts.tsdk.path": "node_modules/typescript/lib",
