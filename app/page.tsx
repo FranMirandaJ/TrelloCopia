@@ -7,7 +7,7 @@ import TrelloLogo from "@/components/ui/trello-logo";
 import { UserCircle2 } from "lucide-react";
 import Link from "next/link";
 
-export default function HomePage() {
+export default function LoginPage() {
   return (
     <div className="flex min-h-dvh flex-col items-center justify-center px-4 bg-muted">
       <Card className="w-full max-w-sm shadow-xl">
@@ -55,11 +55,9 @@ export default function HomePage() {
           <Separator />
           <p className="text-center tracking-wide">O continúa como:</p>
           <Link href="/home" className="block">
-            <Button
-              variant="outline"
-              className={"p-4 font-bold gap-2"}
-            >
-              <UserCircle2 data-icon="inline-start" className="size-6" />Invitado
+            <Button variant="outline" className={"p-4 font-bold gap-2"}>
+              <UserCircle2 data-icon="inline-start" className="size-6" />
+              Invitado
             </Button>
           </Link>
           <Separator />
