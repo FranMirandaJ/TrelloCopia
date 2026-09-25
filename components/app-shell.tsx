@@ -13,7 +13,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     <SidebarProvider className="flex-col">
       <header className="sticky top-0 z-20 flex h-14 shrink-0 items-center gap-2 border-b bg-background px-4">
         <SidebarTrigger className="md:hidden" />
-        <TrelloLogo className="size-7" />
+        <TrelloLogo className="size-7 shrink-0"/>
         <span className="text-xl font-semibold tracking-wide">Trello</span>
       </header>
       <div className="flex min-h-0 flex-1">
